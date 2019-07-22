@@ -1,0 +1,60 @@
+
+h1, h2 {
+	color:grey;
+	text-align:center;
+	padding-top: 20px;
+}
+
+#principal2 .soy {
+	width:700px;
+}
+
+.soy p{
+	margin-top:40px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#principal2 div{
+	border-top: 1px solid black;
+	width:400px;
+	margin: auto;
+}
+
+.no{
+	background-color:grey;
+	opacity:.5;
+	padding:5px;
+}
+
+#principal2 a{
+	color:grey;
+	font-size: 35px;
+}
+
+#principal2 a:hover{
+	color: #95a6d6;
+}
+
+
+p{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.redes {
+	padding-bottom:30px;
+}
+
+.redes a{
+	margin-left:80px;
+}
+
+/*Para Moviles*/
+@media screen and (max-width: 600px) {
+  #principal2 div{width:100%;}
+  #principal2 .soy{width:100%;}
+  iframe{width:100%;}
+  .redes {padding:0;}
+  .redes a {margin-left: 65px;}
+}
+

@@ -1,0 +1,54 @@
+
+h1{
+	font-size: 70px;
+	color: #a9a9a9;
+	margin-top: 20px;
+	margin-left:20px;
+}
+
+p{
+	margin-left:20px;
+	font-weight: bold;
+}
+
+#vg{
+	display:flex;
+}
+#ventas{
+	margin:60px;
+	border: 1px solid grey;
+	border-collapse: collapse;
+	width: 270px;
+	
+}
+td{
+	border: 1px solid grey;
+	padding: 10px;
+}
+tr:first-child{
+	font-weight: bold;
+}
+tr:nth-child(even){
+	background-color:#d1e0e0;
+}
+
+td:nth-child(2){
+	text-align: center;
+}
+
+#chartdiv {
+  margin-top: 20px;
+}
+
+/*Para Tablets*/
+@media screen and (max-width: 800px) {
+	#vg{display:block;}
+	#ventas{margin: auto;}
+}
+
+/*Para Moviles*/
+@media screen and (max-width: 600px) {
+	#ventas{margin: auto;}
+	h1{font-size:50px;}
+}
+

@@ -1,0 +1,14 @@
+#oferta {
+    text-align: center; 
+}
+
+/*Para Tablets*/
+@media screen and (max-width: 800px) {
+  #oferta{margin-top: 20px;}
+}
+
+/*Para Moviles*/
+@media screen and (max-width: 600px) {
+  #oferta img{ width:100%;}
+}
+

@@ -1,0 +1,62 @@
+#principal {
+	border: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  width: auto;
+}
+  
+.item {
+    flex-grow: 1;
+    background: #ccc;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+	box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.5);
+    transition: .2s all;
+    cursor: pointer;
+	text-decoration: none;
+}   
+.item:hover{
+    flex-grow: 2;
+    box-shadow: none;
+}
+    
+.item:nth-child(1){
+    background:url("../imagenes/Complementos/1.jpg");
+}
+    
+.item:nth-child(2){
+    background: url("../imagenes/Complementos/2.jpg") center;
+}
+    
+.item:nth-child(3){
+    background: url("../imagenes/Complementos/3.jpg") center;
+}
+
+.item:nth-child(4){
+    background: url("../imagenes/Complementos/4.jpg");
+}
+  
+.title{
+    text-transform: uppercase;
+    letter-spacing: .075em;
+    color: #fff;
+    transition: .2s all;
+}
+.title:hover{
+    color: black;
+}
+
+/*Para Moviles*/
+@media screen and (max-width: 600px) {
+	.flex{flex-flow: column nowrap;}
+	.item{width:100%}
+}

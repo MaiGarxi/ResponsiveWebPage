@@ -1,0 +1,57 @@
+
+#formulario{
+	font-weight:bold;
+	margin: auto;
+	width: 600px;
+  margin-top: 20px;
+}
+
+#formulario legend {
+    background-color: #A9A9A9;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    margin: 0 0 3% 0;
+    width: 99.5%;
+}
+
+#formulario label {
+    display: inline-block;
+    padding-right: 6%;
+    text-align: justify;
+    width: 16%;
+	margin-left:2%;
+}
+
+#formulario label.sexo{
+    width: 13%;
+}
+
+#formulario label.fecha{
+	width: 37%;
+}
+
+#formulario div, #formulario p{
+	margin-top: 40px;
+	font-weight: normal;
+}
+
+#registrar{
+	margin-left: 40%;
+	font-weight:bold;
+}
+
+/*Para tablets*/
+@media screen and (max-width: 800px) {
+  #formulario label{ margin-left:0;margin-right: 40px;}
+  #registrar{margin-left: 275px;}
+}
+
+/*Para moviles*/
+@media screen and (max-width: 600px) {
+  #formulario{width:100%; margin:0;}
+  #formulario label{ margin-left:0;margin-right: 40px;}
+  #formulario label.fecha {width: 54%;}
+  #formulario label.sexo{ width: 40%;
+}
+  #registrar{margin-left: 110px;}
+}
