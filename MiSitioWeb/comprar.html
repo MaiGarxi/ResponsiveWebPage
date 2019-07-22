@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>Lombok Fashion</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/index2.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="css/comprar2.css" media="screen">		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+		<link rel="shortcut icon" href="imagenes/General/logo.ico">
+		<script type="text/javascript" src="./lib/login.js"></script>
+		<script type="text/javascript" src="./lib/menu.js"></script>
+	</head>
+	<body>
+		<div id="cabecera">
+			<div id="logo"><a href="index2.html"><img src="imagenes/General/logo.png" alt="logo"></a></div>
+			<div class="topnav" id="myTopnav">
+			  <a href="ofertas.html" class="active">Ofertas</a>
+			  <div class="dropdown">
+				<button class="dropbtn">Ropa</button>
+				<div class="dropdown-content">
+				  <a href="hombre.html">Hombre</a>
+				  <a href="mujer.html">Mujer</a>
+				  <a href="complementos.html">Complementos</a>
+				</div>
+			  </div> 
+			  <a href="grafico.html">Lo más vendido</a>
+			  <a href="contacto.html">Quiénes somos</a>
+			  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+			</div>
+			<h3 id="userName" class="hide"></h3>
+			<div id="derecha">
+				<label>Usuario:</label><br>
+				<input id="user" type="text" pattern="^[a-z0-9_-]{3,16}$" title="Usuario no válido (Min 3 caracteres o numeros)" name="nombre"><br>
+				<label>Contraseña:</label><br>
+				<input id="pass" type="password" pattern="^[a-z0-9_-]{6,18}$" title="Contraseña no válida (Min 6 caracteres o numeros)" name="pwd"><br>
+				<p><input id="entrar" type="submit" value="LOGIN"></p>
+				<a href="formulario.html">¿No estás registrado?</a><br>
+			</div>
+		</div><!-- cabecera-->
+		<div id="principal2">
+			<div id="comprar">
+				<header id="title">
+					<h1>Lombok Fashion</h1>
+				</header>
+				<div id="page">
+				  <table id="cart">
+					<thead>
+					  <tr>
+						<th class="first">Foto</th>
+						<th class="second">Cantidad</th>
+						<th class="third">Producto</th>
+						<th class="fourth">Total</th>
+						<th class="fifth">&nbsp;</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <!-- shopping cart contents -->
+					  <tr class="productitm">
+						<td><img src="imagenes/Mujer/Cazadoras/tachas.jpg" class="thumb" alt="X"></td>
+						<td><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
+						<td>Sobrecamisa oversize tachas</td>
+						<td>39,95 EUR</td>
+						<td><span class="remove"><img src="imagenes/General/borrar.png" alt="X"></span></td>
+					  </tr>
+					  <tr class="productitm">
+						<td><img src="imagenes/Mujer/Abrigos/block.jpg" class="thumb" alt="X"></td>
+						<td><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
+						<td>Chubasquero color block</td>
+						<td>35,95 EUR</td>
+						<td><span class="remove"><img src="imagenes/General/borrar.png" alt="X"></span></td>
+					  </tr>
+					  <tr class="productitm">
+						<td><img src="imagenes/Complementos/Relojes/1.jpg" class="thumb" alt="X"></td>
+						<td><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
+						<td>Reloj Rose Gold</td>
+						<td>29.99€</td>
+						<td><span class="remove"><img src="imagenes/General/borrar.png" alt="X"></span></td>
+					  </tr>
+					  <tr class="productitm">
+						<td><img src="imagenes/Complementos/Bolsos/1.jpg" class="thumb" alt="X"></td>
+						<td><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
+						<td>Bandolera Ingrid</td>
+						<td>19.99€</td>
+						<td><span class="remove"><img src="imagenes/General/borrar.png" alt="X"></span></td>
+					  </tr>				  
+					  <!-- iva + total-->
+					  <tr class="extracosts">
+						<td class="light">IVA</td>
+						<td colspan="2" class="light"></td>
+						<td>26.43€</td>
+						<td>&nbsp;</td>
+					  </tr>
+					  <tr class="totalprice">
+						<td class="light">Total:</td>
+						<td colspan="2">&nbsp;</td>
+						<td colspan="2"><span class="thick">125.88€</span></td>
+					  </tr>				  
+					  <!-- checkout btn -->
+					  <tr class="checkoutrow">
+						<td colspan="5" class="checkout"><button id="submitbtn">Comprar</button></td>
+					  </tr>
+					</tbody>
+				  </table>
+				</div>
+			</div>
+		</div>
+		<div id="pie">
+			<a href="index2.html"><img src="imagenes/General/logo.ico" alt="logo" width="50" height="50"></a>
+			<div id="info">			
+				  <a href="ofertas.html">Ofertas</a>
+				  <a href="hombre.html">Hombre</a>
+				  <a href="mujer.html">Mujer</a>
+				  <a href="complementos.html">Complementos</a>
+				  <a href="grafico.html">Lo más vendido</a>
+				  <a href="contacto.html">Quiénes somos</a>
+			</div>
+			<div id="redes">
+				<a href="https://es-es.facebook.com/"><i class="fab fa-facebook"></i></a>
+				<a href="https://www.instagram.com/?hl=es"><i class="fab fa-instagram"></i></a>
+				<a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>	
+			</div>
+		</div><!-- pie-->
+	</body>
+</html>

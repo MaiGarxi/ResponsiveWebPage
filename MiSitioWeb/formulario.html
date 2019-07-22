@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>Lombok | Registro</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/index2.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="css/formulario.css" media="screen">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+		<link rel="shortcut icon" href="imagenes/General/logo.ico">
+		<script type="text/javascript" src="./lib/login.js"></script>
+		<script type="text/javascript" src="./lib/menu.js"></script>
+	</head>
+	<body>
+		<div id="cabecera">
+			<div id="logo"><a href="index2.html"><img src="imagenes/General/logo.png" alt="logo"></a></div>
+			<div class="topnav" id="myTopnav">
+			  <a href="ofertas.html" class="active">Ofertas</a>
+			  <div class="dropdown">
+				<button class="dropbtn">Ropa</button>
+				<div class="dropdown-content">
+				  <a href="hombre.html">Hombre</a>
+				  <a href="mujer.html">Mujer</a>
+				  <a href="complementos.html">Complementos</a>
+				</div>
+			  </div> 
+			  <a href="grafico.html">Lo más vendido</a>
+			  <a href="contacto.html">Quiénes somos</a>
+			  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+			</div>
+			<h3 id="userName" class="hide"></h3>
+			<div id="derecha">
+				<label>Usuario:</label><br>
+				<input id="user" type="text" pattern="^[a-z0-9_-]{3,16}$" title="Usuario no válido (Min 3 caracteres o numeros)" name="nombre"><br>
+				<label>Contraseña:</label><br>
+				<input id="pass" type="password" pattern="^[a-z0-9_-]{6,18}$" title="Contraseña no válida (Min 6 caracteres o numeros)" name="pwd"><br>
+				<p><input id="entrar" type="submit" value="LOGIN"></p>
+				<a href="formulario.html">¿No estás registrado?</a><br>
+			</div>
+		</div><!-- cabecera-->
+		<div id="formulario">
+			<form action="http://10.22.23.71/~juanjo/00_primero/recoger_datos.php">
+				<fieldset>
+					<legend><span>Introduce tus datos:</span></legend>
+					<label>Nombre:</label><input type="text" pattern="^[A-Za-z]*$" title="Nombre no válido" name="nombre" maxlength="60" size="30"><br>
+					<br>
+					<label>Apellidos:</label><input type="text" pattern="[A-Za-z]*\s()[A-Za-z]*$" title="Apellidos no válidos" name="apellidos" size="30"><br>
+					<br>
+					<label>DNI:</label><input type="text" pattern="^(\d{2})\.?(\d{3})\.?(\d{3})[- ]?([A-HJ-NP-Z])$" title="DNI no válido" name="DNI" maxlength="9" ><br>
+					<br>
+					<label class="fecha">Fecha de nacimiento:</label><input type="text" name="fecha" pattern="^(?:0?[1-9]|[12][0-9]|3[01])([.\-\/])(?:0?[1-9]|1[012])\1(?:19|20)\d{2}$" title="Fecha no válida" id="fecha" size="10" maxlength="10"><br>
+					<br>
+					<label class="sexo">Sexo:</label>
+					<label>Hombre <input type="radio" name="sex" value="h"></label>
+					<label>Mujer <input type="radio" name="sex" value="m"></label><br>
+					<br>
+					<label class="via">Vía:</label>						<select name="via">
+						<option>Avenida</option>
+						<option>Alameda</option>
+						<option>Barrio</option>
+						<option>Calle</option>
+						<option>Carretera</option>
+						<option>Paseo</option>
+						<option>Plaza</option>
+						<option>Polígono</option>	
+					</select><br>
+					<br>
+					<label>Domicilio:</label><input type="text" name="domicilio" size="25"><br>
+					<br>
+					<label>Número:</label><input type="text" name="numero" size="4"><br>
+					<br>
+					<label class="direccion">Piso:</label><input type="text" name="piso" size="4"><br>
+					<br>
+					<label class="direccion">Letra:</label><input type="text" name="letra" size="4"><br>
+					<br>
+					<label>Población:</label><input type="text" name="poblacion"><br>
+					<br>
+					<label>Provincia:</label>
+					<select name="provincia">
+						<option>Bizkaia</option>
+						<option>Gipuzkoa</option>
+						<option>Araba</option>	
+					</select><br>
+					<br>
+					<label>País</label><input type="text" name="pais"><br>
+					<br>
+					<label> Email:</label><input type="text" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" title="Email no válido" name="correo" size="30"><br>
+					<br>
+					<label> Teléfono: </label><input type="text" pattern="^(\d\d)[- ]?(\d)[- ]?(\d\d)[- ]?(\d)[- ]?(\d)[- ]?(\d\d)$" title="Teléfono no válido" name="telefono" maxlength="12"><br>
+					<div>
+					<input type="checkbox" name="correo"> Quiero recibir noticias y publicidad en mi correo electrónico. <br>
+					<input type="checkbox" name="aceptar" checked="checked" value="si"> He leído y acepto condiciones de uso.
+					</div>
+					<p><input id="registrar" type="submit" value="Registrar"></p>
+				</fieldset>
+			</form>
+		</div><!-- formulario-->
+		<div id="pie">
+			<a href="index2.html"><img src="imagenes/General/logo.ico" alt="logo" width="50" height="50"></a>
+			<div id="info">			
+				  <a href="ofertas.html">Ofertas</a>
+				  <a href="hombre.html">Hombre</a>
+				  <a href="mujer.html">Mujer</a>
+				  <a href="complementos.html">Complementos</a>
+				  <a href="grafico.html">Lo más vendido</a>
+				  <a href="contacto.html">Quiénes somos</a>
+			</div>
+			<div id="redes">
+				<a href="https://es-es.facebook.com/"><i class="fab fa-facebook"></i></a>
+				<a href="https://www.instagram.com/?hl=es"><i class="fab fa-instagram"></i></a>
+				<a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>	
+			</div>
+		</div><!-- pie-->
+	</body>
+</html>
